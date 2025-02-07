@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> website
-    </title>
+    <title>Calculator usig jivascript.easy tutorials</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1></h1>.He his my  first web site thank you for you.
-    
-    <h1 style="color:aqua; background-color: rgb(16, 38, 168); text-align:center">1st website </h1>
-    <h1 style="color: antiquewhite;background-color: black;text-align: center;">2nd website</h1>
-    <h1 style="color: beige; background-color: aquamarine;text-align: center;">3rd website</h1>
-    <h1 style="font-size: 20p; background-color: blueviolet; text-align: center;color: darkblue;">4th website</h1>
-    <h2 style="color: brown;background-color: chartreuse;text-align: center;">5th website</h2>
-     <h2 style="color: blue; border-image: 20px; text-align: center;background-color: darkgreen;">6th website</h2>
-    
-
-    <script src="script.js"></script>
+    <div class="container">
+       <div class "calculator">
+        <form>
+            <div>
+                <input type="butten" name="display">
+            </div>
+            <div>
+                <input type="button" value="AC"onclick="display.value = '' " class="operator">
+                <input type="button" value="DE"onclick="display.value = display.value.Tostring().slice.(0,-1) " class="operator">
+                <input type="button" value="."onclick="display.value += '.' " class="operator">
+                <input type="button" value="/"onclick="display.value += '/' " class="operator">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="display.value += '7' ">
+                <input type="button" value="8" onclick="display.value += '8' ">
+                <input type="button" value="9" onclick="display.value += '9' ">
+                <input type="button" value="*" onclick="display.value += '*' " class="operator">   
+            </div>
+            <div>
+                <input type="button" value="4"onclick="display.value += '4' ">
+                <input type="button" value="5"onclick="display.value += '5' ">
+                <input type="button" value="6"onclick="display.value += '6' ">
+                <input type="button" value="-"onclick="display.value += '-' " class="operator">
+            </div>
+            <div>
+                <input type="button" value="1"onclick="display.value += '1' ">
+                <input type="button" value="2"onclick="display.value += '2' ">
+                <input type="button" value="3"onclick="display.value += '3' ">
+                <input type="button" value="+"onclick="display.value += '+' " class="operator">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="display.value += '00'">
+                <input type="button" value="0"onclick="display.value += '0' ">
+                <input type="button" value="="onclick="display.value = eval(display.value)" class="equal"  class="operator">
+            </div>
+        </form>
+       </div> 
+    </div>
 </body>
 </html>
